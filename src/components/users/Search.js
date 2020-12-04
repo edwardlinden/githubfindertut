@@ -22,7 +22,7 @@ const Search = () => {
   const onChange = (e) => setText(e.target.value);
 
   return (
-    <div>
+    <div style={searchMB}>
       <form onSubmit={onSubmit} className='form'>
         <input
           type='text'
@@ -47,6 +47,10 @@ const Search = () => {
       )}
     </div>
   );
+};
+
+const searchMB = {
+  marginBottom: '5rem',
 };
 
 export default Search;
